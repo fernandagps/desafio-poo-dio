@@ -39,4 +39,13 @@ public class Produto {
     public void setDataValidade(Date dataValidade) {
         this.dataValidade = dataValidade;
     }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", valor=" + valor +
+                ", dataValidade=" + dataValidade +
+                '}';
+    }
 }

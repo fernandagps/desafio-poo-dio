@@ -3,10 +3,16 @@ package br.com.dio.desafio.dominio;
 import java.util.Date;
 
 public class ClientePessoaFisica extends Cliente {
-    private Integer idade;
-    private String sexo;
+    protected Integer idade;
+    protected String sexo;
 
     public ClientePessoaFisica() {
+    }
+
+    public ClientePessoaFisica(Integer idade, String sexo) {
+        super();
+        this.idade = idade;
+        this.sexo = sexo;
     }
 
     @Override
@@ -23,7 +29,7 @@ public class ClientePessoaFisica extends Cliente {
         return idade;
     }
 
-    public void setIdade(Integer idade) {
+    protected void setIdade(Integer idade) {
         this.idade = idade;
     }
 

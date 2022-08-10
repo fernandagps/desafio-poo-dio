@@ -72,6 +72,8 @@ public class Pedido {
                 "data=" + data +
                 ", quantidade=" + quantidade +
                 ", valorPedido=" + valorPedido +
+                ", cliente=" + cliente +
+                ", produtos=" + produtos +
                 '}';
     }
 }
